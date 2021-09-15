@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-image: url(./img/Untitled\ design\ \(30\).png);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    position: relative;  
+}
+
+
+header ul{
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    text-align: end;
+    text-decoration: none;
+    display: inline;
+    background-color: #385665;
+    list-style: none;
+}
+header ul img{
+    position: absolute;
+    left: 80px;
+    height: 110px;
+    width: 130px;
+    cursor: pointer;
+}
+header ul li{
+    display: inline;
+    padding: 20px;
+    position: relative; top: 23px;;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+@media screen and (min-width: 767px){
+    .menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .menu{
+     height: 10px;
+     width: 20px;
+    margin-top: 30px;
+    margin-left: 60%;
+    width: 25px;
+    height: 20px;
+    }
+}
+
+header ul li a:hover{
+    color: #0f9aff;
+}
+.heading{
+    position: absolute;
+    top: 170px;
+    left: 60px;
+    color: white;
+}
+.heading h1{
+    padding: 20px 10px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.heading h3{
+    padding:10px 30px;
+    font-weight: 800;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.heading button{
+    margin: 30px 40px;
+    background-color: #0f9aff;
+    padding: 10px 60px;
+    color: white;
+    border-radius: 5px;
+    border-color: #0f9aff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.heading button:hover{
+    color: #0f9aff;
+    background-color: black;
+}
+.form{
+    position: absolute;
+    left: 60%;
+    top: 150px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 20px;
+    border-top: 3px solid #0f9aff;
+    height: 430px;
+    width: 25%;
+}
+@media screen and (max-width: 767px) {
+    header{
+        height: 1300px;
+        width: 100%;
+    }
+    header ul li{
+        display: none;
+    }
+    .heading{
+        position: absolute;
+        top: 10%;
+    }
+    .form{
+       position: absolute; 
+       top: 45%;
+       left: 25%;
+       width: 50%;
+    }
+}
+.form p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.sign-up{
+    padding: 10px 5px;
+}
+.sign-up input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+.sign-up button{
+    background-color: #0f9aff;
+    margin: 10px;
+    padding: 10px;
+    width: 90%; 
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-color: #0f9aff;
+    cursor: pointer;
+}
+.sign-up button:hover{
+    color: #0f9aff;
+    background-color: black;
+}
+.sign-up p{
+    font-size: 20px;
+}
+.log-in{
+    border: 2px solid black;
+    background-color: black;
+    border-top: 3px solid #0f9aff;
+    border-radius: 20px;
+    height: 240px;
+    padding: 0px 5px;
+}
+.log-in input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+.log-in button{
+    background-color: #0f9aff;
+    border-color: #0f9aff;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.log-in button:hover{
+    color: #0f9aff;
+    background-color: black;
+}
+
+.features{
+    position: relative;
+}
+.features h1{
+   position: absolute;
+   left: 40%;
+   top: 20px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-weight: 600;
+}
+.features p{
+  text-align: center;
+  padding-top: 100px;
+  color: #444;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 20px; 
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+@media screen and (max-width: 767px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.container .box{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+   margin: 10px 20px;
+    padding: 20px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.container .box:hover{
+    box-shadow: 1px 1px 7px 3px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.box i{
+    font-size: 30px;
+   padding: 10px;
+    
+}
+.box h2{
+   padding-bottom: 20px;
+}
+.box h4{
+    text-align: center;
+}
+
+.packages-box{
+    text-align: center;
+    padding: 20px;
+}
+.packages-box h1{
+    padding: 30px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.packages{
+    text-align: center;
+}
+.packages h3{
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    padding-top: 30px;
+    font-size: 24px;
+}
+.packages select{
+    padding: 15px 100px;
+    font-size: 20px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.packages select option{
+    font-size: 20px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.privacy-policy p{
+    text-align: initial;
+    line-height: 40px;
+    padding: 0px 100px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+   font-weight: 700;
+   font-size: 20px;
+   color: #444;
+}
+
+@media screen and (max-width: 767px){
+    .packages-box h1{
+        font-size: 24px;
+    }
+    .privacy-policy p{
+        text-align: initial;
+        padding: 0px 0px;
+    }
+}
+.footer{
+    background-color: #14234b;
+    padding: 70px 0;
+}
+.footer-box{
+    max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+    text-decoration: none;
+}
+.footer-col ul li{
+    color: white;
+}
+.footer-col ul img{
+    height: 60px;
+    width: 130px;
+}
+.footer-col{
+    width: 25%;
+   padding: 0 15px;
+}
+.footer-col ul h2{
+    color: white;
+    margin: 10px;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.footer-col h2{
+    color: white;
+}
+.footer-col form{
+    color: white;
+    margin-top: 10px;
+}
+.footer-col button{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0B6EB6;
+    border: #0B6EB6;
+    cursor: pointer;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+.end{
+    width: 100%;
+    height: 20px;
+    background-color: #14234b;
+}
+.end p{
+    color: white;
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
